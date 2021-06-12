@@ -1,0 +1,16 @@
+.search-card {
+  display: flex;
+  margin: 3rem;
+  width: 15rem;
+  height: 10rem;
+  background-color: rgb(113, 153, 212);
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.search-card:hover {
+  background-color: cadetblue;
+}

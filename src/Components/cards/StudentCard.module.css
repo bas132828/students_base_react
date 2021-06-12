@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.student-card-small {
+  background-color: rgb(56, 32, 32);
+  height: 22rem;
+  width: 50rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.student-card-small h1 {
+  color: #fff;
+}
+
+.student-card-small h2 {
+  color: #fff;
+  text-decoration-line: underline;
+}
