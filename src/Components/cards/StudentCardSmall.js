@@ -5,15 +5,21 @@ const StudentCardSmall = ({ value }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles["student-card-small"]}>
-        <h1>
-          {value[0].name} {value[0].surname}
-        </h1>
-        <h2>phone:{value[0].phone}</h2>
-        <h2>{value[0].faculty}</h2>
-        <h2>{value[0].address}</h2>
-        <h2>{value[0].course} year of study</h2>
-        <h2>{value[0].birthday}</h2>
-        <h2>{value[0].age()} years</h2>
+        <div className={styles.item}>
+          <img src={value.img} alt=""></img>
+        </div>
+        <div className={styles.item}>
+          <h1>
+            {value.name} {value.surname}
+          </h1>
+          <h2>phone:{value.phone}</h2>
+          <h2>{value.faculty}</h2>
+          <h2>{value.address}</h2>
+          <h2>{value.course} year of study</h2>
+          <h2>{value.birthday}</h2>
+          <h2>{value.age()} years</h2>
+        </div>
+        <div className={styles.activeEm}>{value.active ? "🐢" : "🦀"}</div>
       </div>
     </div>
   );

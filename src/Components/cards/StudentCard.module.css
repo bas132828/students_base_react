@@ -6,11 +6,20 @@
 }
 
 .student-card-small {
-  background-color: rgb(56, 32, 32);
-  height: 22rem;
-  width: 50rem;
+  background-color: rgba(29, 134, 175, 0.767);
+  height: 12rem;
+  width: 33rem;
   border-radius: 1rem;
   padding: 1rem;
+  margin: 1rem;
+  box-shadow: 1px 1px 1px 5px rgba(26, 70, 90, 0.774);
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  animation-duration: 1s;
+  animation-name: slidein;
 }
 
 .student-card-small h1 {
@@ -20,4 +29,31 @@
 .student-card-small h2 {
   color: #fff;
   text-decoration-line: underline;
+}
+
+.item {
+  margin-left: 2rem;
+}
+
+.student-card-small img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 100%;
+  object-fit: contain;
+  background-color: honeydew;
+}
+
+.activeEm {
+  font-size: 5rem;
+  margin-left: 4rem;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
